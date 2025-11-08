@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejs Variables</title>
+  </head>
+  <body>
+    <main>
+      <h1>Ejs Variables</h1>
+      <p><%=title%></p>
+      <h2>User details</h2>
+      <%const greetings = 'Welcome ' + user.name + ' to your details'%>
+      <p>
+        <%=greetings%>
+      </p>
+      <div>
+        <p>
+            Name: <%=user.name%>
+        </p>
+        <p>
+            Age: <%=user.age%>
+        </p>
+        <p>
+            Email: <%=user.email%>
+        </p>
+        <p>
+            Status: <%=user.isActive ? 'Active' : 'Inactive'%>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

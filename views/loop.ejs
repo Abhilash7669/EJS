@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejs <%=metatitle%></title>
+  </head>
+  <body>
+    <main>
+      <h1>Loop with EJS</h1>
+      <div>
+        <h3>Fruits</h3>
+        <ul>
+          <%fruits.forEach(item => {%>
+          <li><%=item%></li>
+          <%})%>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

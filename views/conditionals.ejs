@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejs <%=metatitle%></title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>If Statement with EJS</h1>
+        <%if(user.isLoggedIn) {%>
+        <p>Welcome Back, It is nice to see you again. Master Bruce</p>
+        <%}%>
+      </div>
+      <div>
+        <h1>If else Statement with EJS</h1>
+        <%if(user.isAdmin) {%>
+        <p>Detected an Admin user</p>
+        <%} else {%>
+        <p>Detected a Non-admin user</p>
+        <%}%>
+      </div>
+      <div>
+        <h1>Ternary Operator with EJS</h1>
+        <%=user.hasItems ? 'User has items' : 'User has no items'%>
+      </div>
+    </main>
+  </body>
+</html>
